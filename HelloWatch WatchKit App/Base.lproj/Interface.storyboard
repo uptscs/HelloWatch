@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6751" systemVersion="14B25" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <button width="1" alignment="left" title="Modal" id="38u-vD-X1E">
+                            <connections>
+                                <segue destination="pvu-5m-eR5" kind="modal" id="v71-Oc-CJN"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Push" id="Y5d-SF-gnB">
+                            <connections>
+                                <segue destination="pvu-5m-eR5" kind="push" id="bCM-xH-hOf"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="ZST-r0-oKk">
+            <objects>
+                <controller id="pvu-5m-eR5">
+                    <items>
+                        <dateLabel alignment="left" id="MJ1-ec-gH8">
+                            <dateFormatterStyle key="dateStyle" none="YES" short="YES"/>
+                            <dateFormatterStyle key="timeStyle" none="YES" short="YES"/>
+                        </dateLabel>
+                        <label alignment="left" text="Details" id="iWH-ir-QoP"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="454" y="306"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="bCM-xH-hOf"/>
+    </inferredMetricsTieBreakers>
+</document>
